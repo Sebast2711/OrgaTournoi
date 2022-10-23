@@ -19,7 +19,7 @@ namespace OrgaTournoi.Models
         public int Age { get; set; }
 
         // Reference n vers n Equipe
-        public ICollection<Equipe> equipes { get; set; }
+        public ICollection<Equipe> Equipes { get; set; }
 
     }
 }
