@@ -7,6 +7,7 @@
         public string? Description { get; set; }
         public string Image { get; set; }
 
-
+        // Reference n vers n Jeu
+        public ICollection<Jeu> Jeux { get; set; }
     }
 }

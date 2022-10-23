@@ -9,5 +9,8 @@
         public string Directeur { get; set; }
         public string Lien { get; set; }
 
+        // Reference n vers n Jeu
+        public ICollection<Jeu> Jeux { get; set; }
+
     }
 }
