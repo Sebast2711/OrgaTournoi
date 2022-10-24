@@ -9,5 +9,10 @@
 
         // Reference n vers n Jeu
         public ICollection<Jeu> Jeux { get; set; }
+
+        public Personnage()
+        {
+            this.Jeux = new HashSet<Jeu>();
+        }
     }
 }

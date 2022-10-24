@@ -17,5 +17,12 @@
         // Reference n vers n equipe
         public ICollection<Equipe> Equipes { get; set; }
 
+
+
+        public Match()
+        {
+            this.Equipes = new HashSet<Equipe>();
+        }
+
     }
 }

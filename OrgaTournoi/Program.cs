@@ -5,6 +5,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<OrgaTournoiContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("OrgaTournoiContext") ?? throw new InvalidOperationException("Connection string 'OrgaTournoiContext' not found.")));
 
+// A rajouter dans le projet si non probleme avec UseAuthorization
+builder.Services.AddControllersWithViews();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -19,9 +23,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
 app.UseAuthorization();
-
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

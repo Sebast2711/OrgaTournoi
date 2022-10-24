@@ -16,5 +16,13 @@ namespace OrgaTournoi.Models
 
         // Reference 1 vers n Evenement
         public ICollection<Evenement> Evenements { get; set; }
+
+
+        public Pays()
+        {
+            this.Joueurs = new HashSet<Joueur>();
+            this.Equipes = new HashSet<Equipe>();
+            this.Evenements = new HashSet<Evenement>();
+        }
     }
 }

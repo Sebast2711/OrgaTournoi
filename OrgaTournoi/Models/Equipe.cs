@@ -20,5 +20,16 @@
 
         // Reference n vers n Classement
         public ICollection<Classement> Classements { get; set; }
+
+
+
+
+        public Equipe()
+        {
+            this.Joueurs = new HashSet<Joueur>();
+            this.Matchs = new HashSet<Match>();
+            this.Classements = new HashSet<Classement>();
+        }
+
     }
 }

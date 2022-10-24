@@ -21,5 +21,11 @@ namespace OrgaTournoi.Models
         // Reference n vers n Equipe
         public ICollection<Equipe> Equipes { get; set; }
 
+
+        public Joueur()
+        {
+            this.Equipes = new HashSet<Equipe>();
+        }
+
     }
 }

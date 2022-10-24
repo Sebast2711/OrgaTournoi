@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OrgaTournoi.Data;
 
@@ -11,9 +12,10 @@ using OrgaTournoi.Data;
 namespace OrgaTournoi.Migrations
 {
     [DbContext(typeof(OrgaTournoiContext))]
-    partial class OrgaTournoiContextModelSnapshot : ModelSnapshot
+    [Migration("20221024061148_EvenementJeu")]
+    partial class EvenementJeu
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -23,5 +23,11 @@
 
         // Reference 1 vers n Match
         public ICollection<Match> Matchs { get; set; }
+
+
+        public Evenement()
+        {
+            this.Matchs = new HashSet<Match>();
+        }
     }
 }

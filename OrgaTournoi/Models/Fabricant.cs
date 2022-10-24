@@ -12,5 +12,10 @@
         // Reference n vers n Jeu
         public ICollection<Jeu> Jeux { get; set; }
 
+        public Fabricant()
+        {
+            this.Jeux = new HashSet<Jeu>();
+        }
+
     }
 }
