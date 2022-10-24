@@ -1,0 +1,33 @@
+﻿.no-deco {
+    list-style: none;
+    padding:0px;
+}
+.gauche-droite {
+    display: flex;
+    flex-direction: row;
+}
+
+.gauche {
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    height: 80vh;
+    display:flex;
+    flex-direction:column;
+}
+.droite {
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+.gauche-haut {
+    height:100%;
+    text-align:center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.gauche-bas {
+    height:100%;
+    text-align:end;
+}

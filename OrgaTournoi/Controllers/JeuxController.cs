@@ -25,6 +25,12 @@ namespace OrgaTournoi.Controllers
               return View(await _context.Jeu.ToListAsync());
         }
 
+        // return list jeux
+        public  List<Jeu> getListJeu()
+        {
+            return _context.Jeu.ToList();
+        }
+
         // GET: Jeux/Details/5
         public async Task<IActionResult> Details(int? id)
         {

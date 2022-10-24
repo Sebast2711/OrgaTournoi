@@ -6,7 +6,7 @@ namespace OrgaTournoi.Models
     {
         public int Id { get; set; }
         public string Nom { get; set; }
-        public string Image { get; set; }
+        public string? Image { get; set; }
 
         // Reference 1 vers n Joueur
         public ICollection<Joueur> Joueurs { get; set; }
