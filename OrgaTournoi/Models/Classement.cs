@@ -8,13 +8,14 @@ namespace OrgaTournoi.Models
         public int Id { get; set; }
 
         // Reference n vers n Equipe
-        public ICollection<Equipe> Equipes { get; set; }
-
+        //public ICollection<Equipe> Equipes { get; set; }
+        // Asssociation ClassementEquipe
+        public List<ClassementEquipe> ClassementsEquipes { get; set; }
 
 
         public Classement()
         {
-            Equipes = new HashSet<Equipe>();
+            //Equipes = new HashSet<Equipe>();
         }
     }
 }

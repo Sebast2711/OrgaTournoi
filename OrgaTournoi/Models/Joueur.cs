@@ -19,12 +19,13 @@ namespace OrgaTournoi.Models
         public int Age { get; set; }
 
         // Reference n vers n Equipe
-        public ICollection<Equipe> Equipes { get; set; }
-
+        //public ICollection<Equipe> Equipes { get; set; }
+        // Asssociation EquipeJoueur
+        public List<EquipeJoueur> EquipesJoueurs { get; set; }
 
         public Joueur()
         {
-            this.Equipes = new HashSet<Equipe>();
+            //this.Equipes = new HashSet<Equipe>();
         }
 
     }
